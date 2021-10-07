@@ -6,7 +6,7 @@
 {% block main %}
 
 {% block login %}
-<div id="login-main" class="container">
+<div id="login-main" class="">
 {% if custom_html %}
 {{ custom_html }}
 {% elif login_service %}
@@ -113,7 +113,7 @@
     margin-bottom: 0; }
 
 .login-title {
-  font-size: 30px;
+  font-size: 26px;
   color: #000;
   font-weight: bold;
   margin-bottom: 25px; }
@@ -134,12 +134,15 @@
   <main>
     <div class="container-fluid">
       <div class="row">
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="https://ikwang1225.files.wordpress.com/2014/09/img_1265.jpg" height="100%" alt="login image" class="login-img">
+        </div>
         <div class="col-sm-6 login-section-wrapper">
           <div class="brand-wrapper">
-            <img src="https://i.ibb.co/FWxGxQC/logo-long-new.png" height="50" alt="logo" class="logo">
+            <img src="https://i.ibb.co/FWxGxQC/logo-long-new.png" height="70" alt="logo" class="logo">
           </div>
           <div class="login-wrapper my-auto">
-            <h1 class="login-title">Sign in</h1>
+            <h1 class="login-title">Sign in to BDSRC</h1>
             <form action="{{login_url}}?next={{next}}" method="post" role="form">
               <div class="form-group">
                 <label for="username_input">User</label>
@@ -173,9 +176,7 @@
             <p class="login-wrapper-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
           </div>
         </div>
-        <div class="col-sm-6 px-0 d-none d-sm-block">
-          <img src="https://ikwang1225.files.wordpress.com/2014/09/img_1265.jpg" height="100%" alt="login image" class="login-img">
-        </div>
+       
       </div>
     </div>
   </main>
