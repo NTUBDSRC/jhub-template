@@ -184,11 +184,6 @@ body {
                   <img src="https://i.ibb.co/FWxGxQC/logo-long-new.png" alt="bdsrc logo" class="logo">
               </div>
               <p class="login-card-description">BDSRC Account</p>
-              {% if login_error %}
-                <div class="danger" style="margin-top: 15px; color: rgb(206, 35, 35); font-size: 20px;" role="alert">
-                    {{login_error}}
-                </div>
-                {% endif %}
               <form action="{{login_url}}?next={{next}}" method="post" role="form">
                   <div class="form-group">
                     <label for="username_input" class="sr-only">Student ID</label>
@@ -217,6 +212,11 @@ body {
                     />
                   </div>
                   <input name="login" id="login_submit" class="btn btn-block login-btn" type="submit" value='Sign In' tabindex="3">
+                  {% if login_error %}
+                  <div class="danger" style="margin-top: 15px; color: rgb(206, 35, 35)" role="alert">
+                      {{login_error}}
+                  </div>
+                  {% endif %}
                 </form>
                 
                 <a href="#!" class="forgot-password-link">Forgot password?</a>
