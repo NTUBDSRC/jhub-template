@@ -85,7 +85,7 @@
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <!-- {% if user %} -->
+      {% if user %}
       <div class="navbar-header">
         <!-- <span id="jupyterhub-logo" class="pull-left"><a href="{{logo_url or base_url}}"><img src='{{base_url}}logo' alt='JupyterHub' class='jpy-logo' title='Home'/></a></span> -->
         <span id="jupyterhub-logo" class="pull-left"><a href="{{logo_url or base_url}}"><img src='https://i.ibb.co/FWxGxQC/logo-long-new.png' alt='BDSRC Logo' height="100px" class='jpy-logo' title='Home'/></a></span>
@@ -96,7 +96,7 @@
           <span class="icon-bar"></span>
         </button> -->
       </div>
-      <!-- {% endif %} -->
+      {% endif %}
 
       <div class="collapse navbar-collapse" id="thenavbar">
         {% if user %}
