@@ -182,7 +182,9 @@ input {
 input[type=checkbox],
 input[type=radio] {
     box-sizing: border-box;
-    padding: 0
+    padding: 0;
+    -webkit-appearance: checkbox; 
+    moz-appearance: checkbox;
 }
 
 input[type=number]::-webkit-inner-spin-button,
