@@ -32,6 +32,16 @@ body {
   background-color: #e4e4e4;
   min-height: 100vh; }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 .brand-wrapper {
   margin-bottom: 19px; }
   .brand-wrapper .logo {
@@ -119,7 +129,7 @@ body {
 
 </head>
 <body>
-  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0 no-select">
     <div class="container">
       <div class="card login-card">
         <div class="row no-gutters">
