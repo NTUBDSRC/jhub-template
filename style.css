@@ -4967,7 +4967,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav {
     margin-bottom: 0;
-    padding-left: 15px;
+    padding-left: 0;
     list-style: none
 }
 
@@ -6453,12 +6453,12 @@ a.thumbnail:hover {
 
 .media-right,
 .media > .pull-right {
-    padding-left: 10px
+    padding-left: 30px
 }
 
 .media-left,
 .media > .pull-left {
-    padding-right: 10px
+    padding-right: 30px
 }
 
 .media-body,
