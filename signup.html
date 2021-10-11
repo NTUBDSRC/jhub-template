@@ -195,6 +195,12 @@ body {
                     />
                   </div>
                   <input name="login" id="signup_submit" class="btn btn-block login-btn" type="submit" value='Sign Up' tabindex="4">
+                  {% if alert %}
+                    <div class="alert {{alert}}" style="margin-top: 15px;" role="alert">
+                        {{result_message}}
+                        {{ alert }}
+                    </div>
+                　{% endif %}
                 </form>
                 <!-- <a href="#!" class="forgot-password-link">Forgot password?</a> -->
                 <p class="login-card-footer-text">Already have an account? <a href="{{ base_url }}login" class="text-reset">Sign in</a></p>
