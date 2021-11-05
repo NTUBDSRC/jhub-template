@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <style>
 
-strong {display: inline !important}
 
 body {
   font-family: "Karla", sans-serif;
@@ -101,13 +100,14 @@ body {
 .message {
   border: 0;
   border-radius: 10px;
-  box-shadow: 0 10px 30px 0 rgba(124, 119, 119, 0.411);
+  /* box-shadow: 0 10px 30px 0 rgba(124, 119, 119, 0.411); */
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   font-size: 18px;
+  text-align: center;
 }
 
 .warning {
@@ -202,7 +202,7 @@ body {
 <body>
   <main class="d-flex align-items-center min-vh-100 py-3 py-md-0 noselect">
     <div class="container">
-      <div class="card message warning">
+      <div class="message warning">
        WARNING Please note that this system is still in testing. Be sure to backup all your works locally on your computer.
       </div>
       <div class="card login-card">
