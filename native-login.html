@@ -18,6 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+<script type="text/javascript">
+  $.niceToast.setup({
+      position: "top-center",
+      timeout: 5000,
+  });
+  
+  $(document).ready ( function () {
+      $.niceToast.error("Warning!");
+  });​
+  
+  alert("Hello world");​
+  
+  </script>
+
 <!-- CSS -->
 <link href="https://cdn.jsdelivr.net/npm/nice-toast-js/dist/css/nice-toast-js.min.css" rel="stylesheet" type="text/css" />
 
@@ -241,20 +256,6 @@ body {
 {% endblock %}
 {% block script %}
 {{ super() }}
-<script>
-$.niceToast.setup({
-    position: "top-center",
-    timeout: 5000,
-});
-
-$(document).ready ( function () {
-    $.niceToast.error("Warning!");
-});​
-
-alert("Hello world");​
-
-</script>
-
 <script>
 if (window.location.protocol === "http:") {
     // unhide http warning
