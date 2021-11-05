@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/nice-toast-js/dist/css/nice-toast-js.min.css" rel="stylesheet" type="text/css" />
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/nice-toast-js/dist/js/nice-toast-js.min.js" type="text/javascript"></script>
 {% block login %}
 <!-- <div id="login-main" class="container">
     <form action="{{login_url}}?next={{next}}" method="post" role="form">
@@ -236,6 +241,18 @@ body {
 {% endblock %}
 {% block script %}
 {{ super() }}
+<script>
+$.niceToast.setup({
+    position: "top-center",
+    timeout: 5000,
+});
+
+$(document).ready ( function () {
+    $.niceToast.error("Warning!");
+});​
+
+</script>
+
 <script>
 if (window.location.protocol === "http:") {
     // unhide http warning
